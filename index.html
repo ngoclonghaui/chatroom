@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Đăng ký / Đăng nhập</h2>
+        <input type="email" id="email" placeholder="Nhập email">
+        <input type="password" id="password" placeholder="Nhập mật khẩu">
+        <button id="signupBtn">Đăng ký</button>
+        <button id="loginBtn">Đăng nhập</button>
+        <button id="logoutBtn" style="display:none;">Đăng xuất</button>
+    </div>
+
+    <div class="chat-container" style="display:none;">
+        <h2>Phòng Chat</h2>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Nhập tin nhắn">
+        <input type="file" id="imageInput" accept="image/*">
+
+        <button id="sendBtn">Gửi</button>
+
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
